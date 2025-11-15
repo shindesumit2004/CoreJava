@@ -11,7 +11,7 @@ public class CharAt {
         for(int i=0; i<fullName.length(); i++) {
 
 
-            System.out.println(fullName.charAt(i));
+            System.out.print(fullName.charAt(3));
         }
     }
 }

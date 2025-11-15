@@ -1,0 +1,9 @@
+package sumit.String.AllMethod;
+
+public class CharAt1 {
+    public static void main(String[] args) {
+        String str = "Java Programming";
+        System.out.println(str.charAt(3));
+
+    }
+}
