@@ -1,0 +1,32 @@
+package Practice;
+
+public class EvenOdd {
+    public static void main(String[] args) {
+
+
+     /*
+        System.out.println("Print the Even number 1 to 10");
+
+        for (int i = 1; i <=  10; i++) {
+            if (i % 2 == 0) {
+                System.out.println(i);
+            }
+        }
+        System.out.println("Print the Odd Number 1 to 10");
+
+        for (int i = 1; i <= 10; i++){
+            if (i % 2 != 0){
+                System.out.println(i);
+            }
+        }*/
+        System.out.println("Even number from 1 to 10");
+        for (int i = 0; i <= 10; i++) {
+            if ((i & 1) == 0) {
+                System.out.println(i);
+            }
+        }
+        System.out.println("Odd Number From 1 to 10");
+
+    }
+
+}
