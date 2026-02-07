@@ -1,0 +1,25 @@
+package org.example.ExceptionHandling;
+
+public class ErrorEx {
+    // Stack overflow Error
+    public static void recursiveCall(){
+        recursiveCall();
+    }
+
+    public static void main(String[] args) {
+
+        try{
+            recursiveCall();
+        }catch (StackOverflowError e){
+            System.out.println("Caught StackOverflowError: "+e.getMessage());
+        }
+
+        // OutOfMemoryError
+
+        try{
+            int[] largeArray = new int[Integer.MAX_VALUE];
+        }catch (OutOfMemoryError e){
+            System.out.println("Caught OutOfMemoryError : "+e.getMessage());
+        }
+    }
+}
